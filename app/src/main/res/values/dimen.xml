@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="NormalTextSize">24sp</dimen>
+    <dimen name="SmallTextSize">18sp</dimen>
+    <dimen name="ImageHeight">100dp</dimen>
+    <dimen name="ImageWidth">100dp</dimen>
+    <dimen name="TextMarginLeft">4dp</dimen>
+    <dimen name="TextViewHeight">50dp</dimen>
+</resources>

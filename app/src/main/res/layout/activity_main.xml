@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgViewScanningID"
+        android:layout_width="@dimen/ImageWidth"
+        android:layout_height="@dimen/ImageHeight"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/scanning_icon" />
+
+    <RelativeLayout
+        android:id="@+id/layout_scanning"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ImageHeight"
+        android:layout_toEndOf="@id/imgViewScanningID"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtViewScanningID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/Device_Scanning"
+            android:textSize="@dimen/NormalTextSize"
+            android:gravity="center_vertical"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/txtViewScanningID"
+            android:layout_below="@id/txtViewScanningID"
+            android:layout_gravity="center_vertical"
+            android:text="@string/Scanning_Description"
+            android:textSize="@dimen/SmallTextSize"
+            android:textStyle="normal"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgSettingID"
+        android:layout_width="@dimen/ImageWidth"
+        android:layout_height="@dimen/ImageHeight"
+        android:layout_below="@id/imgViewScanningID"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/setting_icon" />
+
+    <RelativeLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ImageHeight"
+        android:layout_toEndOf="@id/imgSettingID"
+        android:layout_below="@id/imgViewScanningID"
+        android:clickable="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtViewSettingID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/Setting"
+            android:textSize="@dimen/NormalTextSize"
+            android:gravity="center_vertical"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/txtViewSettingID"
+            android:layout_below="@id/txtViewSettingID"
+            android:layout_gravity="center_vertical"
+            android:text="@string/SettingDescription"
+            android:textSize="@dimen/SmallTextSize"
+            android:gravity="top"
+            android:textStyle="normal"/>
+    </RelativeLayout>
+
+</RelativeLayout>

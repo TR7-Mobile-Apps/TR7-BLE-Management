@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">TR7-BLE-Management</string>
+    <string name="app_name">BLE-Management</string>
+    <string name="Device_Scanning">Device Scanning</string>
+    <string name="Scanning_Description">Scanning devices around with filter if available</string>
+    <string name="Setting">Setting</string>
+    <string name="SettingDescription">All setting of the app</string>
 </resources>
